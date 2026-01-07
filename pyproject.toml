@@ -1,0 +1,41 @@
+[project]
+name = "copyrells"
+version = "1.0.0"
+description = "Agente de Copywriting para Influenciadores Digitais usando Agno Framework"
+requires-python = ">=3.10"
+dependencies = [
+    "agno",
+    "fastapi>=0.121.1",
+    "openai",
+    "psycopg2-binary",
+    "python-dotenv",
+    "sqlalchemy>=2.0.44",
+    "tavily-python>=0.7.12",
+    "uvicorn",
+    "streamlit>=1.39.0",
+    "pyarrow>=22.0.0",
+    "requests",
+    "groq>=1.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+# Configuração do setuptools
+# Desabilita a descoberta automática de pacotes para evitar confusão
+# com pastas que não são pacotes Python (videos, prompts, etc.)
+[tool.setuptools]
+# Não há pacotes Python para instalar (apenas scripts na raiz)
+# Isso evita que setuptools tente descobrir pacotes nas pastas videos/ e prompts/
+packages = []
+
+# Configurações do uv (gerenciador de pacotes)
+[tool.uv]
+# Dependency groups (substitui dev-dependencies)
+# Para adicionar dependências de desenvolvimento: uv add --group dev nome-pacote
+
+# Nota: Para executar scripts, use:
+# uv run python agent.py
+# uv run uvicorn agent:app --host 0.0.0.0 --port 8000
+

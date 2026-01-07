@@ -1,0 +1,15 @@
+# EXEMPLO DE CONFIGURAÇÃO - Copie para .env e preencha com suas credenciais
+
+# OpenAI API Key
+# Obtenha em: https://platform.openai.com/api-keys
+OPENAI_API_KEY=sua_chave_openai_aqui
+
+# Tavily API Key  
+# Obtenha em: https://tavily.com/
+TAVILY_API_KEY=sua_chave_tavily_aqui
+
+# PostgreSQL Database URL
+# Formato: postgresql://usuario:senha@host:porta/nome_do_banco
+# Exemplo: postgresql://postgres:senha123@localhost:5432/copyrells_db
+DATABASE_URL=postgresql://usuario:senha@localhost:5432/copyrells_db
+

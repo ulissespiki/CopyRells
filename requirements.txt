@@ -1,0 +1,10 @@
+agno
+openai
+psycopg2-binary
+python-dotenv
+sqlalchemy>=2.0.44
+tavily-python>=0.7.12
+uvicorn
+streamlit
+requests
+
