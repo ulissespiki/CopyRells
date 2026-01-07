@@ -42,3 +42,6 @@ wheels/
 .env
 .venv
 
+# Vídeos (arquivos grandes)
+videos/
+
