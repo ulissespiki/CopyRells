@@ -30,7 +30,7 @@ from transcription_reader import get_creator_transcriptions, list_available_crea
 # ============================================
 # PostgreSQL para armazenar histórico de sessões
 # Formato DATABASE_URL: postgresql://usuario:senha@host:porta/nome_banco
-db = PostgresDb(db_url=os.getenv("DATABASE_URL"))
+db = PostgresDb(db_url=os.getenv("SUPABASE_DB_URL"))
 
 # ============================================
 # CRIAÇÃO DO AGENTE
