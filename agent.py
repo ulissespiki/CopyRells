@@ -102,5 +102,5 @@ if __name__ == "__main__":
     #     "Crie um copy para Instagram sobre lançamento de curso de marketing digital"
     # )
     # agent.print_response(response.content, stream=True)
-    agent_os.serve(app="agent:app", reload=True, host="192.168.0.13")
+    agent_os.serve(app="agent:app", reload=True, host="192.168.0.13", port=8080)
 
